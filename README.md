@@ -71,7 +71,7 @@ yarn build
 This will optimize and minimize the compiled bundle.
 
 ## Credits
-Big thanks to this great repos:
+Big thanks to these great repos:
 
 https://github.com/lean/phaser-es6-webpack
 

@@ -2,6 +2,7 @@
 import Phaser from 'phaser';
 import Mushroom from '../sprites/Mushroom';
 
+// This is where all the game play code goes.
 class Play extends Phaser.State {
   init () {}
   preload () {}
@@ -9,7 +10,7 @@ class Play extends Phaser.State {
   create () {
     const bannerText = 'Phaser + ES6 + Webpack';
     let banner = this.add.text(this.world.centerX, this.game.height - 80, bannerText);
-    banner.font = 'Bangers';
+    banner.font = 'Roboto';
     banner.padding.set(10, 16);
     banner.fontSize = 40;
     banner.fill = '#77BFA3';
@@ -24,6 +25,12 @@ class Play extends Phaser.State {
     })
 
     this.game.add.existing(this.mushroom);
+  }
+
+  update() {
+    if(this.game.input.keyboard.isDown(Phaser.KeyCode.SPACEBAR)) {
+      this.game.state.start('GameOver');
+    }
   }
 
   render () {

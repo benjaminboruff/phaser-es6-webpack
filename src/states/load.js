@@ -1,5 +1,5 @@
-import Phaser from 'phaser'
-import { centerGameObjects } from '../utils'
+import Phaser from 'phaser';
+import { centerGameObjects } from '../utils';
 
 class Load extends Phaser.State {
   init () {}
@@ -11,7 +11,7 @@ class Load extends Phaser.State {
 
     this.load.setPreloadSprite(this.loaderBar);
     //
-    // load your assets
+    // load your assets below
     //
     this.load.image('mushroom', 'assets/images/mushroom2.png');
   }
