@@ -22,10 +22,10 @@
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",
     "expose-loader": "^0.7.1",
-    "webfontloader": "^1.6.27",
     "webpack": "^1.13.3"
   },
   "dependencies": {
-    "phaser-ce": "^2.7.1"
+    "phaser-ce": "^2.7.2",
+    "webfontloader": "^1.6.27",
   }
 }
